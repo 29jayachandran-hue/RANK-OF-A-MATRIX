@@ -10,15 +10,32 @@ Step 2: Define the matrix as a 2D NumPy array with the given elements.
 Step 3: Using the np.linalg.matrix_rank(), we can find the rank of the given matrix.
 Step 4: Print the rank of the matrix. 
 ## Program:
+
 #Program to find the rank of a matrix.
+
 #Developed by: A.Jayachandran
-#RegisterNumber: 25015034
+
+#RegisterNumber: 212225230112
+
+import os
+
+os.environ["OPENBLAS_NUM_THREADS"]="1"
+
 import numpy as np
-a=np.array([[3,2,5],[1,1,2],[3,3,6]])
-rank=np.linalg.matrix_rank(a)
+
+A = np.array([
+    [5, -3, -10],
+    [2,  2,  -3],
+    [-3, -1,  5]
+])
+
+rank = np.linalg.matrix_rank(A)
+
 print(rank)
 ## Output:
-<img width="1480" height="732" alt="image" src="https://github.com/user-attachments/assets/57fddc76-4ac2-4c9b-9de5-369f8a7e332d" />
+
+<img width="843" height="841" alt="image" src="https://github.com/user-attachments/assets/d0a50d45-386c-4c30-9289-b3132a7d2943" />
+
 
 ## Result:
 Thus the rank for the given matrix is successfully solved by  using a python program.
